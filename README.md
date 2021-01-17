@@ -1,0 +1,2 @@
+# LinkvertiseBypass
+Automatically Bypasses Linkvertise
