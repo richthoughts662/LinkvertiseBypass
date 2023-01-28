@@ -30,7 +30,7 @@ if (url.indexOf("?r=") != -1) {
             headers: {
                 "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Mobile/15E148 Safari/604.1"
             },
-            url: "https://publisher.linkvertise.com/api/v1/redirect/link" + window.location.pathname + path
+            url: "https://publisher.linkvertise.com/448734/pogohack-apk/redirect/link" + window.location.pathname + path
         });
     })
  
@@ -39,7 +39,7 @@ if (url.indexOf("?r=") != -1) {
         timestamp: new Date().getTime(),
         random: "6548307"
     };
-    var bypass_url = "https://publisher.linkvertise.com/api/v1/redirect/link/static" + window.location.pathname;
+    var bypass_url = "https://publisher.linkvertise.com/448734/pogohack-apk/redirect/link/static" + window.location.pathname;
     GM.xmlHttpRequest({
         method: "GET",
         headers: {
@@ -50,7 +50,7 @@ if (url.indexOf("?r=") != -1) {
             var json = JSON.parse(response.responseText);
             o.link_id = json.data.link.id
             o = { serial: btoa(JSON.stringify(o)) }
-            bypass_url = "https://publisher.linkvertise.com/api/v1/redirect/link" + window.location.pathname + "/target?X-Linkvertise-UT=" + localStorage.getItem("X-LINKVERTISE-UT");
+            bypass_url = "https://publisher.linkvertise.com/ac/448734/redirect/link" + window.location.pathname + "/target?X-Linkvertise-UT=" + localStorage.getItem("X-LINKVERTISE-UT");
  
             GM.xmlHttpRequest({
                 method: "POST",
